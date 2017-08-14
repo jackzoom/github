@@ -1,0 +1,5 @@
+git init   设置当前目录为仓库
+git add README.md   添加文件
+git commit -m "first commit"   添加文件备注名
+git remote add origin https://github.com/jackzoom/tentel.git
+git push -u origin master

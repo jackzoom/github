@@ -1,0 +1,50 @@
+git config --global user.name "用户名"                                配置用户名
+git config --global user.email "邮箱"（www.676221604@qq.com）         配置用户邮箱
+
+git add remote origin "http://www.github.com/jackzoom/test.git"       链接远程仓库
+git remote -v                                                         查看所有远程仓库
+git push -u origin master                                             上传远程仓库文件
+
+git stage                                                             
+git stash                                                             
+
+git init                        将当前目录设置为Git管理仓库
+git status                      查看仓库当前状态
+git diff                        检查仓库中修改过的文件
+git add 文件名.后缀             暂存文件到仓库----ps:git add .添加所有子文件
+git commit -m '备注'            仓库提交(常与暂存文件并用)----git commit -m 'reBuildData'(备注可以通过git log查看)
+{
+    输出内容：commit ID         输出内容为：哈希值，可以通过前7位数查看版本
+}
+git reset --hard 版本ID         回退到以前的版本（该操作为恢复操作）
+git reset --head 文件名.后缀    回退文件的状态
+git log                         查看仓库日志
+git reflog                      查看仓库历史日志
+vim 文件名.后缀                 打开文件
+{
+    按键：Esc                   退出编辑
+    输入：s                     进行插入修改(在控制框)    
+    输入：:wq                   退出文件(wq:Write写入保存 Quit退出编辑)
+}
+git checkout -- 文件名.后缀     撤销文件上一次修改(只能撤销未添加到仓库的内容)
+git branch                      查看所有分支
+{
+    git branch 分支名           新建分支
+    git branch -d 分支名        删除分支
+}
+git checkout 分支名             切换分支
+git merge 分支名                合并分支(需要在将要存储分支的分支目录下合并其他分支)
+git pull 远程名 本地名          取回分支
+
+
+cd 盘符：                       选择系统盘符----ps:cd d:/jackzoom
+cd 文件夹名                     进打开该文件夹目录----ps:cd Tentel
+clear                           清屏
+ls -r                           查看目录所有文件(字母倒序)——更多(list.txt文件)
+mkdir 文件夹名                  创建文件夹----ps:mkdir Tentel
+pwd                             列出当前目录路径
+touch 文件名.后缀               新建文件----ps:touch test.txt（.表示添加当前目录所有）
+start ./文件名.后缀             打开当前文件夹文件----(start ./test.txt)
+start ../文件名.后缀            打开上个文件夹文件
+start .                         打开当前文件夹窗口
+start /                         打开当前文件夹CMD窗口
